@@ -42,3 +42,7 @@ keymap.set("n", "<leader>ff", "<CMD>lua require('telescope.builtin').find_files(
 keymap.set("n", "<leader>fg", "<CMD>lua require('telescope.builtin').live_grep()<CR>")
 keymap.set("n", "<leader>fb", "<CMD>lua require('telescope.builtin').buffers()<CR>")
 keymap.set("n", "<leader>fc", "<CMD>lua require('telescope.builtin').commands()<CR>")
+
+-- lsp
+keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
+keymap.set("n", "<C-]>", vim.lsp.buf.definition)

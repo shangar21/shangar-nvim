@@ -4,6 +4,7 @@ return {
     config = function ()
       require("onedark").setup({
         theme = "onedark",
+		style = "darker",
         code_style = {
           comments = "italic",
           functions = "bold"

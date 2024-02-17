@@ -20,6 +20,8 @@ return {
 					end,
 				},
 				mapping = {
+					["<down>"] = require("cmp").mapping.select_next_item({ behavior = require("cmp").SelectBehavior.Insert }),
+					["<up>"] = require("cmp").mapping.select_prev_item({ behavior = require("cmp").SelectBehavior.Insert }),
 					["<C-d>"] = require("cmp").mapping.scroll_docs(-4),
 					["<C-f>"] = require("cmp").mapping.scroll_docs(4),
 					["<C-Space>"] = require("cmp").mapping.complete(),

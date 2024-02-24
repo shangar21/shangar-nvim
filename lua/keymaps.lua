@@ -49,3 +49,6 @@ keymap.set("n", "<C-]>", vim.lsp.buf.definition)
 
 -- latexify short cut
 keymap.set("v", "<leader>lat", ':<C-u>AmcliLatex<CR>')
+
+-- enter terminal normal mode with escape
+keymap.set("t", "<Esc>", "<C-\\><C-n>")

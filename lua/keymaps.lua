@@ -52,3 +52,6 @@ keymap.set("v", "<leader>lat", ':<C-u>AmcliLatex<CR>')
 
 -- enter terminal normal mode with escape
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+-- aerial short cut
+keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")

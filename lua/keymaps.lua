@@ -55,3 +55,7 @@ keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- aerial short cut
 keymap.set("n", "<leader>a", "<cmd>AerialToggle!<CR>")
+
+-- delete buffer
+keymap.set("n", "<leader>bd", "<cmd>bd<CR>")
+keymap.set("n", "\\d", "<cmd>bd<CR>")

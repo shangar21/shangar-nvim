@@ -4,7 +4,7 @@ return {
     lazy = false,
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = "all", -- one of "all", or a list of languages
+        ensure_installed = {'c', 'cpp', 'cuda', 'rust', 'python', 'lua', 'latex'}, -- one of "all", or a list of languages
         sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
         ignore_install = { "phpdoc", "tree-sitter-phpdoc" }, -- List of parsers to ignore installing
         auto_install = false,
@@ -24,6 +24,8 @@ return {
         -- indent = {enable = false, disable = {"yaml", "python"}},
         context_commentstring = { enable = true, enable_autocmd = false },
       })
+	  require("nvim-treesitter.install").prefer_git = true
     end,
   },
+
 }

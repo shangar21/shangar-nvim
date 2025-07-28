@@ -1,6 +1,8 @@
 # Shangar Nvim
 
-To install simply run:
+Make sure pynvim is installed via pip as well as nodejs (npm is required for some of the plugins)
+
+To install run:
 
 ```bash
 git clone git@github.com:shangar21/shangar-nvim.git ~/.config/shangar-nvim
